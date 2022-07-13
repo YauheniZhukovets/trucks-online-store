@@ -1,0 +1,142 @@
+:root {
+    --body-bcg: #D9D9D9
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+}
+
+body {
+    background-color: var(--body-bcg);
+}
+
+header {
+    margin-top: 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 1140px;
+    height: 100px;
+    background: #FFFFFF;
+    margin: 0 auto;
+}
+
+.header-container span {
+    padding: 16px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: #FFFFFF;
+    width: 1140px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.navbar-container a {
+    padding: 15px 16px;
+}
+
+.breadcrumb-container {
+    width: 1140px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    list-style: none;
+    padding: 13px 16px;
+}
+
+.breadcrumb-item {
+    display: inline;
+    font-size: 18px;
+}
+
+.breadcrumb li + li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-container {
+    margin: 16px;
+    background-color: #FFFFFF;
+    width: 850px;
+    height: 200px;
+}
+
+.product {
+    display: flex;
+}
+
+.image-container {
+    margin: 16px;
+}
+
+.image {
+    width: 224px;
+    height: 168px;
+}
+
+.information {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description p {
+    width: 400px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.tag {
+    display: inline-block;
+    margin: 8px 8px;
+    padding: 3px 6px;
+    color: #FFFFFF;
+    background-color: #C4C4C4;
+}
+
+.price {
+    display: flex;
+    justify-content: end;
+    font-weight: 500;
+    font-size: 16px;
+    width: 195px;
+    margin: 16px;
+}
+
+.page-text {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.page-text-container {
+    font-weight: 400;
+    font-size: 16px;
+    width: 400px;
+}
