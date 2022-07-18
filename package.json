@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "browser-refresh --enable-source-maps -r @babel/register -r marko/node-require src/server.js",
     "start": "NODE_ENV=production node -r @babel/register -r marko/node-require src/server.js",
-    "predeploy": "npm run build",
+    "predeploy": "npm run dev",
     "deploy": "gh-pages -d dev"
   },
   "devDependencies": {
