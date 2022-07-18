@@ -1,0 +1,50 @@
+style {
+.breadcrumb-container {
+    width: 1140px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    list-style: none;
+    padding: 13px 16px;
+}
+
+.breadcrumb-item {
+    display: inline;
+    font-size: 18px;
+}
+
+.breadcrumb li + li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+  /* header {
+    font-size: 2.5em;
+    font-weight: 300;
+    background-color: #f1f1f1;
+    padding: 1em;
+    text-align: center;
+  }
+  body {
+    font-family: "Helvetica Neue", Roboto, "Arial Nova", "Segoe UI", Arial, sans-serif;
+    margin: 0;
+  }
+  .logo {
+    height: 2.2em;
+  } */
+}
+
+<div class='breadcrumb-container'>
+  <ol class='breadcrumb'>
+    <for|breadcrumb| of=input.breadcrumbs>
+      <li class="breadcrumb-item"><a href=`${breadcrumb.href}`>${breadcrumb.text}</a></li>
+    </for>
+  </ol>
+</div>
+
+
+
+

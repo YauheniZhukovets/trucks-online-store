@@ -1,0 +1,27 @@
+style {
+  .navbar {
+    margin-top: 20px;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: #ffffff;
+    width: 1140px;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  .navbar-container a {
+    padding: 15px 16px;
+  }
+}
+
+<div class='navbar'>
+  <div class='navbar-container'>
+    <for|nav| of=input.navs>
+      <div><a href=`${nav.href}`>${nav.text}</a></div>
+    </for>
+  </div>
+</div>

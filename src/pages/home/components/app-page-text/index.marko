@@ -1,0 +1,22 @@
+style {
+.page-text {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.page-text-container {
+    font-weight: 400;
+    font-size: 16px;
+    width: 400px;
+}
+}
+
+
+<div class="page-text">
+  <div class="page-text-container">
+    <for|pageText| of=input.pageTexts>
+      <${pageText.tag}><br>${pageText.content}<br></>
+    </for>
+  </div>
+</div>
+
