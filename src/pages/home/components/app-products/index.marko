@@ -35,7 +35,7 @@ style {
 .description p {
     width: 400px;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .tag {
@@ -57,36 +57,38 @@ style {
 }
 
 <div class="products">
-    <div class="products-container">
-        <div class="product">
+        <for|stock| of=input.stocks>
+        <div class="products-container">
+            <div class="product">
             <div class="image-container">
-                <lasso-img class="image" src="./1.jpg" />
+                <img class="image" src=`${stock.image}`/>
             </div>
             <div class="information">
                 <div class="text">
                     <div>
                         <h3>
-                            Item Title 1
+                            ${stock.title}
                         </h3>
                     </div>
                     <div class="description">
                         <p>
-                            Item Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
-                            distinctio, officia tenetur a eaque deleniti, impedit accusamus, alias provident sint id
-                            odio neque laudantium! Saepe quisquam libero soluta itaque?
+                            <b>Make:</b> ${stock.make} ${stock.model},
+                            <b>power:</b> ${stock.power}${stock.power_measure},
+                            <b>payload:</b> ${stock.payload}, <b>gross weight:</b> ${stock.gross_weight},
+                            <b>type:</b> ${stock.type}
                         </p>
                     </div>
                 </div>
                 <div class="tags">
-                    <span class="tag">2017</span>
-                    <span class="tag">185555km</span>
-                    <span class="tag">6x4</span>
+                    <span class="tag">${stock.year}</span>
+                    <span class="tag">${stock.mileage}${stock.mileage_measure}</span>
+                    <span class="tag">${stock.axle_configuration}</span>
                 </div>
             </div>
             <div class="price">
-                <span><b>$ 39 000</b></span>
+                <span><b>${stock.price_currency} ${stock.price}</b></span>
             </div>
         </div>
-    </div>
+        </div>
+        </for>
 </div>
-

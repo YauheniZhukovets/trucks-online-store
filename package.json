@@ -1,6 +1,6 @@
 {
   "name": "online-store",
-  "homepage": "https://YauheniZhukovets.github.io/trucks-online-store",
+  "repository": "https://github.com/YauheniZhukovets/trucks-online-store",
   "description": "app SSR",
   "version": "1.0.0",
   "dependencies": {
@@ -19,11 +19,6 @@
   "private": true,
   "scripts": {
     "dev": "browser-refresh --enable-source-maps -r @babel/register -r marko/node-require src/server.js",
-    "start": "NODE_ENV=production node -r @babel/register -r marko/node-require src/server.js",
-    "predeploy": "npm run dev",
-    "deploy": "gh-pages -d dev"
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "start": "NODE_ENV=production node -r @babel/register -r marko/node-require src/server.js"
   }
 }
