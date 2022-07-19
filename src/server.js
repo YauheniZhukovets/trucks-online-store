@@ -4,6 +4,7 @@ import { serveStatic } from "lasso/middleware";
 import markoMiddleware from "@marko/express";
 import homePage from "./pages/home";
 
+
 // Configure lasso to control how JS/CSS/etc. is delivered to the browser
 const isProduction = process.env.NODE_ENV === "production";
 configure({
