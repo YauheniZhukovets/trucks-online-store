@@ -1,69 +1,18 @@
-style {
-.products {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+import image1 from "./image/1.jpg";
+import image2 from "./image/2.jpg";
+import image3 from "./image/3.jpg";
+import image4 from "./image/4.jpg";
+import image5 from "./image/5.jpg";
+import image6 from "./image/6.jpg";
 
-.products-container {
-    margin: 16px;
-    background-color: #FFFFFF;
-    width: 850px;
-    height: 200px;
-}
-
-.product {
-    display: flex;
-}
-
-.image-container {
-    margin: 16px;
-}
-
-.image {
-    width: 224px;
-    height: 168px;
-}
-
-.information {
-    margin: 16px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.description p {
-    width: 400px;
-    font-weight: 300;
-    font-size: 13px;
-}
-
-.tag {
-    display: inline-block;
-    margin: 8px 8px;
-    padding: 3px 6px;
-    color: #FFFFFF;
-    background-color: #C4C4C4;
-}
-
-.price {
-    display: flex;
-    justify-content: end;
-    font-weight: 500;
-    font-size: 16px;
-    width: 195px;
-    margin: 16px;
-}
-}
-
-var url = '1.jpg'
+static const states = [image1, image2, image3, image4, image5, image6];
 
 <div class="products">
-        <for|stock| of=input.stocks>
+        <for|stock, i| of=input.stocks>
         <div class="products-container">
             <div class="product">
             <div class="image-container">
-                <img class="image" src=`${stock.image}`/>
+                <img class="image" src=`${states[i]}`/>
             </div>
             <div class="information">
                 <div class="text">

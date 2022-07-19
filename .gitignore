@@ -1,11 +1,11 @@
 node_modules
+dist
+/.idea
+*.log
+
 static
 .cache
 *.marko.js
-*.log
-
-# dependencies
-/.idea
 
 # testing
 /coverage

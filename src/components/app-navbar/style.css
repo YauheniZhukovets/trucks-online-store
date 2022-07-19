@@ -1,5 +1,4 @@
-style {
-  .navbar {
+.navbar {
     margin-top: 20px;
   }
 
@@ -16,12 +15,3 @@ style {
   .navbar-container a {
     padding: 15px 16px;
   }
-}
-
-<div class='navbar'>
-  <div class='navbar-container'>
-    <for|nav| of=input.navs>
-      <div><a href=`${nav.href}`>${nav.text}</a></div>
-    </for>
-  </div>
-</div>

@@ -1,0 +1,21 @@
+.breadcrumb-container {
+    width: 1140px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    list-style: none;
+    padding: 13px 16px;
+}
+
+.breadcrumb-item {
+    display: inline;
+    font-size: 18px;
+}
+
+.breadcrumb li + li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}

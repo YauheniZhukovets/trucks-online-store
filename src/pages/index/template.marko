@@ -1,0 +1,14 @@
+<app-layout>
+  <@head>
+    <title>${input.pageMeta.title}</title>
+    <meta name="description" content=`${input.pageMeta.meta_description}`>
+    <meta name="keywords" content=`${input.pageMeta.meta_keywords}`>
+  </@head>
+  <@body>
+    <app-navbar navs=input.navs/>
+    <app-breadcrumb breadcrumbs=input.breadcrumbs/>
+    <app-heading-level titleH1=(input.pageMeta.h1)/>
+    <app-products stocks=input.stocks/>
+    <app-page-text pageTexts=input.pageTexts/>
+  </@body>
+</app-layout>
